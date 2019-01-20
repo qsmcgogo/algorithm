@@ -33,7 +33,7 @@ void s(int *a,int l,int r){         //sort an array.
 int main(){
     srand((unsigned)time(NULL));
     int *a=(int *)malloc(sizeof(int)*m);
-    for(int i=0;i<m;i++)a[i]=rand()%100;          //test datas.
+    for(int i=0;i<m;i++)a[i]=rand()%100;          //test data.
     for(int i=0;i<m;i++)cout<<a[i]<<" ";
     cout<<endl;
     s(a,0,m-1);
