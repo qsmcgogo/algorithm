@@ -27,7 +27,7 @@ ll gao(vector<int>temp){    //temp为黑点的每个相邻白点孩子数量集�
     ll res=0,i;
     ll n=temp.size();
     if(n==0)return 0;
-    ll dp[n]={0},sum[n]={0},s=0;
+    ll dp[100010]={0},sum[100010]={0},s=0;
     sum[0]=s=temp[0];
     for(i=0;i<n;i++){
         res+=temp[i];
@@ -67,4 +67,3 @@ int main(){
     }
     cout<<sum;
 }
-
